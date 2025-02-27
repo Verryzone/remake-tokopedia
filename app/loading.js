@@ -1,8 +1,6 @@
-import React from 'react'
-
 const Loading = () => {
   return (
-    <div>Loading</div>
+    <div className="fixed h-full w-full">Loading...</div>
   )
 }
 
