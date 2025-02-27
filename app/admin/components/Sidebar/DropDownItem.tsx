@@ -3,9 +3,9 @@ import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 
 interface DropDownItemProps {
-      nama: string
-      items: Array<{nama: string, kelas?: string}>
-    }
+  nama: string
+  items: Array<{nama: string, kelas?: string}>
+}
     
 const DropDownItem = ({nama, items}: DropDownItemProps) => {
   const router = useRouter();

@@ -26,7 +26,7 @@ export default function RootLayout({
           <div className="w-[20%] h-full">
             <Sidebar />
           </div>
-          <div className="w-[80%] h-full">
+          <div className="w-[80%] h-full m-8">
             <main className="relative">{children}</main>
           </div>
         </div>
