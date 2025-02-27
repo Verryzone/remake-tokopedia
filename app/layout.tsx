@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import MobileNavbar from "@/components/MobileNavbar";
-import Footer from "@/components/Footer";
 import { Suspense } from "react";
 import Loading from "@/components/Loading";
 
@@ -16,18 +13,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <div className="flex items-center justify-center overflow-hidden">
           <div className="max-w-[1440px] w-full px-0 lg:px-6">
-            <Suspense fallback={<Loading/>}>
-                <main className="relative">
-                  {children}  
-                </main>
+            <Suspense fallback={<Loading />}>
+              <main className="relative">{children}</main>
             </Suspense>
           </div>
         </div>
