@@ -1,5 +1,5 @@
 import React from "react";
-import DialogAdd from "../../components/Sidebar/DialogAdd";
+import ModalAddProduct from "../../components/Modal/ModalAddProduct";
 
 const Products = () => {
   return (
@@ -8,8 +8,7 @@ const Products = () => {
         <div className="flex justify-between items-center mb-2">
           <h1 className="text-3xl font-bold">Products</h1>
           <div>
-            {/* <button className="button-primary">Add Product</button> */}
-            <DialogAdd />
+            <ModalAddProduct/>
           </div>
         </div>
         <hr className="mb-4" />
